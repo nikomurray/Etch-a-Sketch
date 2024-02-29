@@ -16,22 +16,22 @@
   <body>
     <div class="container">
       <nav>
-        <div class="button"><span class="material-symbols-outlined">
+        <div class="button" id="gridBtn"><span class="material-symbols-outlined">
             grid_on
             </span>Grid</div>
-        <div class="button"><span class="material-symbols-outlined">
+        <div class="button" id="clearBtn"><span class="material-symbols-outlined">
             clear_all
             </span>Clear</div>
-        <div class="button"><span class="material-symbols-outlined">
+        <div class="button" id="shadeBtn"><span class="material-symbols-outlined">
             stroke_full
             </span>Shade</div>
-        <div class="button"><span class="material-symbols-outlined">
+        <div class="button" id="randomBtn"><span class="material-symbols-outlined">
             looks
             </span>Random</div>
-        <div class="button"><span class="material-symbols-outlined">
+        <div class="button" id="eraserBtn"><span class="material-symbols-outlined">
             ink_eraser
             </span>Eraser</div>
-        <div class="button">
+        <div class="button" id="colorBtn">
           <input type="color" id="colorBtn" /><label for="colorBtn"
             >Color</label
           >
@@ -40,7 +40,7 @@
 
       <div class="sketch-area" id="sketchArea"></div>
       <div class="slider-box">
-        <input type="range" class="slider" value="16" max="64" min="1">
+        <input type="range" class="slider" id="slider" value="16" max="64" min="1">
         <p class="slider-value" id="sliderValue">16 x 16 (Resolution)</p>
       </div>
     </div>
