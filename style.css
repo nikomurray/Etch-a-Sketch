@@ -123,3 +123,14 @@ nav {
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
 }
+
+@media (max-width:900px){
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer {
+        display: none;
+    }
+}
