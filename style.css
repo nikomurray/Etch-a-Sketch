@@ -42,7 +42,7 @@ nav{
 }
 
 .button {
-    cursor: pointer;
+    user-select: none;
     height: 50px;
     display: flex;
     align-items: center;
@@ -52,11 +52,11 @@ nav{
     border-radius: var(--b-radius);
     gap: 4px;
     color: var(--grey);
-    transition: color 0.2s;
+    transition: all 0.2s;
 }
 
 .button:hover{
-    color: var(--black);
+    background: #dedede;
 }
 
 /* SKETCH AREA */
@@ -91,4 +91,8 @@ nav{
 .slider-value {
     text-align: center;
     font-size: 1.2rem;
+}
+
+.border {
+    border: solid 1px #b8b8b8b2;
 }
