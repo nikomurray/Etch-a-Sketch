@@ -73,3 +73,10 @@ colorBtn.addEventListener("input", () => {
   const colorSelect = colorBtn.value
   sketchAreaGrid.setGridColor(colorSelect);
 });
+
+slider.addEventListener("input",()=>{
+  sketchAreaGrid.setGridSize(slider.value)
+  sliderValue.textContent = `${slider.value} x ${slider.value} (Resolution)`
+  sketchAreaGrid.displayGrid()
+})
+

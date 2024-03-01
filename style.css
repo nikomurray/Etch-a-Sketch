@@ -1,9 +1,9 @@
 :root {
-    --light-blue:#bfdbf7;
-    --grey:#898989;
-    --white:#ffffff;
-    --black:#000;
-    --b-radius:4px;
+    --light-blue: #c3def7;
+    --grey: #898989;
+    --white: #ffffff;
+    --black: #000;
+    --b-radius: 4px;
 }
 
 
@@ -22,6 +22,7 @@ body {
 }
 
 .container {
+    position: relative;
     height: 100vh;
     margin: 0 auto;
     width: 90%;
@@ -34,7 +35,7 @@ body {
 
 /* BUTTONS AREA */
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +56,7 @@ nav{
     transition: all 0.2s;
 }
 
-.button:hover{
+.button:hover {
     background: #dedede;
 }
 
@@ -68,7 +69,7 @@ nav{
     border-radius: var(--b-radius);
 }
 
-.slider-box{
+.slider-box {
     width: 100%;
 }
 
@@ -87,7 +88,7 @@ nav{
 .slider:hover {
     opacity: 1;
 }
-  
+
 .slider-value {
     text-align: center;
     font-size: 1.2rem;
@@ -95,4 +96,30 @@ nav{
 
 .border {
     border: solid 1px #b8b8b8b2;
+}
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.fa-github {
+    color: var(--black);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
 }
